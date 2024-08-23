@@ -1,0 +1,153 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.3s;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #0056b3;
+}
+
+main {
+    flex: 1;
+    padding-top: 60px; /* Adjust for fixed header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    text-align: center;
+    width: 80%;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    outline: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+#datetime {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.dark {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.dark header, .dark footer {
+    background-color: #000;
+}
+
+.dark nav ul li a {
+    color: #fff;
+}
+
+.dark nav ul li a:hover {
+    background-color: #222;
+}
+
+.about-box {
+    border: 2px solid #007bff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 居中显示日期和时间 */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

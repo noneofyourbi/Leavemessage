@@ -1,0 +1,53 @@
+<<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的活力网站</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#留言板">留言板</a></li>
+        <li><a href="#我们的留言">我们的留言</a></li>
+        <li><a href="#关于">关于</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="留言板">
+      <h2>留言板</h2>
+      <form id="留言表单">
+        <textarea placeholder="留下你的想法吧！"></textarea>
+        <button type="submit">发表</button>
+      </form>
+      <div id="留言列表">
+        </div>
+    </section>
+
+    <section id="我们的留言">
+      <h2>我们的留言</h2>
+      <div id="留言展示">
+      </div>
+    </section>
+
+    <section id="关于">
+      <h2>关于</h2>
+      <p>在这里介绍自己和网站初衷！</p>
+    </section>
+  </main>
+
+  <footer>
+    <div id="时间">
+      <span id="日期"></span>
+      <span id="时间"></span>
+      <button id="模式切换">切换模式</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
